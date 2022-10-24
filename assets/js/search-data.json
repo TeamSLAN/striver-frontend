@@ -1,9 +1,20 @@
 {
   
+    
+        "post0": {
+            "title": "Striver App",
+            "content": "Quote . “You are your only limit” -MLK . Like . Dislike .",
+            "url": "/striver-frontend/markdown/week%200/2022/10/23/striver-post.html",
+            "relUrl": "/markdown/week%200/2022/10/23/striver-post.html",
+            "date": " • Oct 23, 2022"
+        }
+        
+    
+  
 
   
   
-      "page0": {
+      ,"page0": {
           "title": "Schedule",
           "content": ". Unit 3: N@tM Project, Web, Systems, and Data . The beginning of Trimester 2 is focussed on Algorithms and Coding. Student need to build their own portfolio. That portfolio should focus on their interests in Python and JavaScript programming. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 8 | | | | | . 9 | | | | | . 10 | | | | | . 11 | | | | | . 12 | | | | | . . Unit 2: Introduction to Web Development . Websites are made up of several key parts: Frontend, Backend, Data and Deployment. The focus for these weeks is to enable students to perform the aspects of constructing and deploying a simple Website. Fastpages got us started on these concepts, but now we will start building a Website from the ground up. Once again, there will be a lot of learning focused tools and getting things working. But, by the end of the Unit, students will be ready to start many of the technical coding aspects of Web Development, having established a Deployed Website. On Nov 3rd our Trimester work will end with a project and student participation in Electives Department “Night at the Museum” (N@tM). . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 4 | | | | | . 5 | | | - Frontend | | . 6 | | | | | . 7 | | | - API | | . . Unit 1: Introduction to Tools and Resources . The initial weeks focus on introducing Tools, Pair Programming, and the AP Resources that we plan to use throughout the year. At the end of Weeks 0-3, students will be exposed to blogging with GitHub Pages; developing with Jupyter Notebooks, Python, JavaScript, HTML, and Code.org AppLab; working with AP classroom and becoming familiar with Create Performance Task project requirements. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 0 | | | | | . 1 | | | | | . 2 | | | | | . 3 | | | | | . . Unit 4: Algorithmic Programming . Trimester 2 begins with student teaching and a focus on algorithms. Coding and algorithms is more impactful if you have projects(s) as you are learning. Each week a “Student Team” has a teaching assignment supported by College Board materials. Additionally, the Teacher is providing Career Tech mini-labs that correspond to one or more topics for the week. Use the two things together as you improve your personal blog with Frontend algorithms and/or Jupyter Notebooks. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 13 | | | | | . 14 | | | | | . 15 | | | | | . 16 | | | | | .",
           "url": "/striver-frontend/schedule",
