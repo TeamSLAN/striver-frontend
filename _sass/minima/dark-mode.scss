@@ -1,7 +1,7 @@
-$high-emph: rgba(rgb(216, 249, 221), 0.87);
-$med-emph: rgba(rgb(216, 249, 221), 0.69); //Noicee
-$low-emph: rgba(rgb(216, 249, 221), 0.38);
-$dark-grey : #001e14; 
+$high-emph: rgba(rgb(216, 231, 249), 0.87);
+$med-emph: rgba(rgb(216, 231, 249), 0.69); //Noicee
+$low-emph: rgba(rgb(216, 231, 249), 0.38);
+$dark-grey : #141516; 
 // $dark-grey : #1F1B24;
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
@@ -12,7 +12,7 @@ html, body, input, textarea, select, button {
 }
 
 a {
-    color: rgb(198, 73, 73) !important;
+    color: rgb(73, 183, 198) !important;
 }
 
 a:hover {

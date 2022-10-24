@@ -6,8 +6,8 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: APCSP2
-description: AP Computer Science Principles course materials.
+title: Striver
+description: Inspirational quotes as a service
 github_username: teamslan
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "striver-frontend"
@@ -39,9 +39,7 @@ baseurl: "/striver-frontend" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: NighthawkCoding
-    github: nighthawkcoders
-    youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
+    github: teamslan
 
 # Set this to true to get LaTeX math equation support
 use_math: 
