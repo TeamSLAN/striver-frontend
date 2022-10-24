@@ -15,47 +15,8 @@
   
   
       ,"page0": {
-          "title": "Schedule",
-          "content": ". Unit 3: N@tM Project, Web, Systems, and Data . The beginning of Trimester 2 is focussed on Algorithms and Coding. Student need to build their own portfolio. That portfolio should focus on their interests in Python and JavaScript programming. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 8 | | | | | . 9 | | | | | . 10 | | | | | . 11 | | | | | . 12 | | | | | . . Unit 2: Introduction to Web Development . Websites are made up of several key parts: Frontend, Backend, Data and Deployment. The focus for these weeks is to enable students to perform the aspects of constructing and deploying a simple Website. Fastpages got us started on these concepts, but now we will start building a Website from the ground up. Once again, there will be a lot of learning focused tools and getting things working. But, by the end of the Unit, students will be ready to start many of the technical coding aspects of Web Development, having established a Deployed Website. On Nov 3rd our Trimester work will end with a project and student participation in Electives Department “Night at the Museum” (N@tM). . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 4 | | | | | . 5 | | | - Frontend | | . 6 | | | | | . 7 | | | - API | | . . Unit 1: Introduction to Tools and Resources . The initial weeks focus on introducing Tools, Pair Programming, and the AP Resources that we plan to use throughout the year. At the end of Weeks 0-3, students will be exposed to blogging with GitHub Pages; developing with Jupyter Notebooks, Python, JavaScript, HTML, and Code.org AppLab; working with AP classroom and becoming familiar with Create Performance Task project requirements. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 0 | | | | | . 1 | | | | | . 2 | | | | | . 3 | | | | | . . Unit 4: Algorithmic Programming . Trimester 2 begins with student teaching and a focus on algorithms. Coding and algorithms is more impactful if you have projects(s) as you are learning. Each week a “Student Team” has a teaching assignment supported by College Board materials. Additionally, the Teacher is providing Career Tech mini-labs that correspond to one or more topics for the week. Use the two things together as you improve your personal blog with Frontend algorithms and/or Jupyter Notebooks. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 13 | | | | | . 14 | | | | | . 15 | | | | | . 16 | | | | | .",
-          "url": "/striver-frontend/schedule",
-          "relUrl": "/schedule",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page1": {
-          "title": "Frontend",
-          "content": "| Overview | Tutorial | Calculator | Binary | Grades | Graph | Life | Snake | . Frontend Web Development Overview . . Frontend web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website through a Browser. In this class, we will be using Fastpages on top of GitHub Pages to maximize our presentations, while minimizing our front-end coding. GitHub Pages deployment is performed through Jekyll, which regenerates the website automatically after each commit, tracking can be seen in Actions tab within GitHub. | HTML generation is performed through Liquid, a template language (similar to Jinja2 or Thymeleaf). | CSS style layout is provided by using Themes provided through GH Pages. Each page we make we assume the defined theme and insert our HTML fragments, local page style, and local page JavaScript. | JavaScript enables pages to have actions, fetch content, animate, etc | . . . Code in this Sub Menu . HTML, CSS, and JavaScript are the front-end of the Web. Many tools and languages complement development using markup, style and JavaScript. This section of the Nighthawk Coders CS website is providing some code samples. These are intended to spark your own PBL ideas. Each of these were generated after watching others teach or interacting with students. . Tutorial: This page is a FastPages _post. This page contains Markdown and HTML. Pull this file into VSCode and explore the fundamentals of making a content page. | Calculator: This calculator was inspired by Mr. Mortensen’s calculator that he built in Objective-C during his first year of teaching at DNHS (2019). It was recreated by former student Anthony using Fastpages, HTML, JavaScript, and CSS on this site in 2022. Creating a calculator helps developers to learn how to manage temporary data, manage presentation, associate input to calculator output, and work with logic | Visually it shows how math works within a language; specific functions, handling of strings, numbers, math, etc. | . | Binary: This example was created after watching Harvard CS50 by David J. Malan in 2020, he had built a machine to turn on and off lights/binary digits. My thought after watching machine, why not simulate that binary machine in software? Liquid is used to define a constant for the number of bits | JavaScript is used base 2, 8, 16 calculations | . | Grades: This grade calculator was created to show interaction of HTML and JavaScript to perform input. Additionally, it show how to add element to HTML Document Object Model (DOM). FYI, the IJavaScript kernel did not support input as of this writing. | Graph: This was created when a student named Bryant 2022 asked me the question “how would I plot data?” as described in an FRQ. JavaScript canvas is used to draw grid, axis, lines | . | Life: This was created by Nathaniel 2022 when I asked him about something interesting to show students in JS that relates to school. Built on Conway’s Game of Life (Wikipedia, Original) | Somewhat pure JavaScript, no canvas usage even though it has a grid. | . | Snake: This was interest of students in each of my 3 years, inspiration and some of the code came from a student named Nolan 2021. Contains menu and settings, as well as Grid | Uses JavaScript canvas and key events | . | .",
-          "url": "/striver-frontend/frontend/overview",
-          "relUrl": "/frontend/overview",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page2": {
-          "title": "API",
-          "content": "| Overview | Covid19 RapidAPI | Jokes API | Users Database | . APIs in this Sub Menu . HTML, CSS, and JavaScript are the front-end of the API. Python and API resource definitions are used for RESTful API definitions. Abstraction of Frontend and Backend code, the exchange of standard data format (JSON), and guidelines for exchange (REST) is a technique that saves a lot of time between developers. Learning APIs is a highly recommended step for every developer trying to break into the world of tech. . Covid19: RapidAPI example. This is introducing APIs by accessing something that already exists. RapidAPI shows how many practice RESTful definitions. Almost any data source imagined can be accessed here. | Jokes: An introduction to Python RESTful API libraries. A Python List is used to make a Data Model, but persistence in this technique is limited, each time server is refreshed data is lost. This example is great for learning, but data is considered volatile. | Users: Another RESTful API library example. However, this backend establishes data persistence through the use of a database. This data if properly managed in deployment and migrated when changed can last forever. | . Web API Overview . . A Web API is an application programming interface typically for a web browser. Non-changing or Static Endpoints are used in interacting with the server-side Web APIs. RESTful Web APIs use HTTP methods to access resources via URL parameters, and use JSON for transmitting text between client and server. Server. In these examples, we will be using Python to define REST APIs. Python tools are very popular for building RESTful APIs | REST: Representational State Transfer. A set of guidelines on how to architect a network-connected software system. | Client-server: One guideline is a client and server must be decoupled from each other, allowing each to develop independently. | Layered system: The client may access the resources on the server indirectly through other layers such as a proxy or using authentication. This will be clarified by application and security requirements. | . Client. JavaScript is the frontend language used to consume data from the Python defined REST APIs. Fetch will be used to make HTTP requests, as well as handle HTTP response. There are four basic HTTP methods, they align with Create, Read, Update, Delete (CRUD). | GET =&gt; Retrieve/Read data | POST =&gt; Create data | PUT =&gt; Update data | DELETE =&gt; Delete data | . REST endpoints will have similarity from application to application. In planning APIs, for a Users system you can anticipate key methods. The Users RESTful APIs would likely contain these endpoints. | GET: /users =&gt; Get a list of users | GET: /users(id) =&gt; Get a single user | POST: /users =&gt; Create a new user | PUT: /users(id) =&gt; Update a user | DELETE: /users(id) =&gt; Delete a user | . Once a RESTful API receives and processes an HTTP request, it will return an HTTP response. Included in this response is an HTTP status code. Common status codes are shown. | 200 =&gt; OK, this response will then have the promise of JSON data | 400 =&gt; Bad Request | 404 =&gt; Not Found | 500 =&gt; Internal Server Error (aka bug) | . . . .",
-          "url": "/striver-frontend/api/overview",
-          "relUrl": "/api/overview",
-          "date": ""
-      }
-      
-  
-
-  
-
-  
-
-  
-
-  
-      ,"page6": {
           "title": "About",
-          "content": "This site is built with fastpages . Key Links . GitHub Repos: github.com/nighthawkcoders | AWS Deployments: csp.nighthawkcodingsociety.com | Slack: Join Link | 2021-2022 Archives: Fall, Early Winter, Late Winter, Spring | . .",
+          "content": "This site is built by Safin, Leo, Alex, and Navan .",
           "url": "/striver-frontend/about/",
           "relUrl": "/about/",
           "date": ""
@@ -66,7 +27,7 @@
   
 
   
-      ,"page8": {
+      ,"page2": {
           "title": "",
           "content": "Objectives . . This Conceptual Framework teaches College Boards 5 Big Ideas of AP Computer Science Principles, Python, JavaScript, and Web Site application development together in an integrated fashion. The purpose is to teach College Board requirements while adding languages, tools, frameworks, and methodologies that meet Career Technical Education (CTE) needs. The outcome is preparing the High School student for the AP Test and simultaneously building the skills required for Computer Science internships. . . Blogs .",
           "url": "/striver-frontend/",
@@ -92,7 +53,7 @@
   
 
   
-      ,"page14": {
+      ,"page8": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "/striver-frontend/robots.txt",
