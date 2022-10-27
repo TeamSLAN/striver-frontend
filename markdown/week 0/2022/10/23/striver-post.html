@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Striver App" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kalani Cabral-Omana"},"dateModified":"2022-10-23T00:00:00-05:00","datePublished":"2022-10-23T00:00:00-05:00","description":"Striver post","headline":"Striver App","mainEntityOfPage":{"@type":"WebPage","@id":"/striver-frontend/markdown/2022/10/23/striver-post.html"},"url":"/striver-frontend/markdown/2022/10/23/striver-post.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kalani Cabral-Omana"},"dateModified":"2022-10-23T00:00:00-05:00","datePublished":"2022-10-23T00:00:00-05:00","description":"Striver post","headline":"Striver App","mainEntityOfPage":{"@type":"WebPage","@id":"/striver-frontend/markdown/week%200/2022/10/23/striver-post.html"},"url":"/striver-frontend/markdown/week%200/2022/10/23/striver-post.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/striver-frontend/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/striver-frontend/feed.xml" title="Striver" /><link rel="shortcut icon" type="image/x-icon" href="/striver-frontend/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -89,6 +89,10 @@ window.onload = wrap_img;
       
           <a class="category-tags-link" href="/striver-frontend/categories/ap#markdown">markdown</a>
         
+        &nbsp;
+      
+          <a class="category-tags-link" href="/striver-frontend/categories/ap#Week 0">Week 0</a>
+        
         
       
       </p>
@@ -102,13 +106,56 @@ window.onload = wrap_img;
 </ul><h2 id="quote">
 <a class="anchor" href="#quote" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quote</h2>
 
-<p>“You are your only limit” - unkown</p>
+<p><button onclick="getQuote()">Get new quote</button></p>
 
-<p><button type="button" onclick="alert('You liked this quote')">Like</button>
-0</p>
+<p id="quote"></p>
 
-<p><button type="button" onclick="alert('You dislike this quote')">Dislike</button>
-0</p>
+<p><button type="button" onclick="incrementLikes()">Like</button></p>
+
+<p id="likeCount">N/A</p>
+
+<p><button type="button" onclick="incrementDislikes()">Dislike</button></p>
+
+<p id="dislikeCount">N/A</p>
+
+<script>
+    const remote = "https://striver.nighthawkcodescrums.gq";
+    const quote = document.getElementById("quote");
+    const likes = document.getElementById("likeCount");
+    const dislikes = document.getElementById("dislikeCount");
+    let currentQuoteID = -1;
+
+    const incrementLikes = async () => {
+        if (currentQuoteID === -1) return;
+        const { likes: count } = await fetch(remote + "/like", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ id: currentQuoteID }),
+        }).then((r) => r.json());
+        likes.innerHTML = `${count} likes`;
+    };
+
+    const incrementDislikes = async () => {
+        if (currentQuoteID === -1) return;
+        const { dislikes: count } = await fetch(remote + "/dislike", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ id: currentQuoteID }),
+        }).then((r) => r.json());
+        dislikes.innerHTML = `${count} dislikes`;
+    };
+
+    const getQuote = async () => {
+        const res = await fetch(remote + "/quote").then((r) => r.json());
+        currentQuoteID = Number.parseInt(Object.keys(res)[0]);
+        const currentQuote = res[currentQuoteID];
+
+        likes.innerHTML = `${currentQuote["likes"]} likes`;
+        dislikes.innerHTML = `${currentQuote["dislikes"]} likes`;
+        quote.innerHTML = currentQuote["quote"];
+    };
+</script>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
@@ -118,7 +165,7 @@ window.onload = wrap_img;
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/striver-frontend/markdown/2022/10/23/striver-post.html" hidden></a>
+</script><a class="u-url" href="/striver-frontend/markdown/week%200/2022/10/23/striver-post.html" hidden></a>
 </article>
 
       </div>
