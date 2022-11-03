@@ -56,33 +56,27 @@
                 <div class="col-sm">
                     <h2>Add a comment</h2>
                     <!-- form to submit new comment -->
-                    <form id="commentForm" action="#commentsh2">
-                        <div class="mb-3">
-                            <!-- name input -->
-                            <input
-                                type="text"
-                                id="commentName"
-                                placeholder="Name"
-                                class="form-control"
-                            />
-                        </div>
-                        <div class="mb-3">
-                            <!-- comment textarea (large text box) -->
-                            <textarea
-                                class="form-control"
-                                placeholder="Your comment"
-                                id="commentText"
-                            ></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <!-- submit button runs submit comment function -->
-                            <input
-                                type="submit"
-                                onclick="submitComment()"
-                                class="btn btn-primary"
-                            />
-                        </div>
-                    </form>
+                    <div class="mb-3">
+                        <!-- name input -->
+                        <input
+                            type="text"
+                            id="commentName"
+                            placeholder="Name"
+                            class="form-control"
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <!-- comment textarea (large text box) -->
+                        <textarea
+                            class="form-control"
+                            placeholder="Your comment"
+                            id="commentText"
+                        ></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <!-- submit button runs submit comment function -->
+                        <button onclick="submitComment()" class="btn btn-primary">Submit</button>
+                    </div>
                     <h2 id="commentsh2">Comments</h2>
                     <!-- displays all the comments in a list -->
                     <div id="commentList"></div>

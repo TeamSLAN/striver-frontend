@@ -1,7 +1,7 @@
 // all requests/responses to backend are in JSON format
 
-// const remote = "https://striver.nighthawkcodescrums.gq";
-const remote = "http://127.0.0.1:5000";
+const remote = "https://striver.nighthawkcodescrums.gq";
+// const remote = "http://127.0.0.1:5000";
 
 // references to HTML elements on the page
 const quote = document.getElementById("quote");
