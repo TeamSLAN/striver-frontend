@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- imports bootstrap styling library -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,13 +21,16 @@
     <body>
         <div class="container mt-3">
             <div class="row">
+                <!-- creates first column in layout -->
                 <div class="col-sm">
+                    <!-- site header -->
                     <h1>Striver</h1>
                     <p>Safin, Leo, Alex, Navan | Mortensen Period 4</p>
                     <button type="button" class="btn btn-primary" onclick="getQuote()">
                         Get new quote
                     </button>
 
+                    <!-- display quote using bootstrap -->
                     <figure class="mt-3">
                         <blockquote class="blockquote">
                             <p id="quote"></p>
@@ -34,8 +38,12 @@
                         <figcaption class="blockquote-footer" id="quoteAuthor"></figcaption>
                     </figure>
 
+                    <!-- bootstrap button for liking quote -->
+                    <!-- btn-success = green -->
+                    <!-- on click, run the increment likes function -->
                     <button type="button" class="btn btn-success" onclick="incrementLikes()">
                         <span id="likeCount">N/A</span>
+                        <!-- thumbs up icon -->
                         <i class="bi bi-hand-thumbs-up-fill"></i>
                     </button>
 
@@ -44,10 +52,13 @@
                         <i class="bi bi-hand-thumbs-down-fill"></i>
                     </button>
                 </div>
+                <!-- second layout column -->
                 <div class="col-sm">
                     <h2>Add a comment</h2>
+                    <!-- form to submit new comment -->
                     <form id="commentForm" action="#commentsh2">
                         <div class="mb-3">
+                            <!-- name input -->
                             <input
                                 type="text"
                                 id="commentName"
@@ -56,6 +67,7 @@
                             />
                         </div>
                         <div class="mb-3">
+                            <!-- comment textarea (large text box) -->
                             <textarea
                                 class="form-control"
                                 placeholder="Your comment"
@@ -63,6 +75,7 @@
                             ></textarea>
                         </div>
                         <div class="mb-3">
+                            <!-- submit button runs submit comment function -->
                             <input
                                 type="submit"
                                 onclick="submitComment()"
@@ -71,6 +84,7 @@
                         </div>
                     </form>
                     <h2 id="commentsh2">Comments</h2>
+                    <!-- displays all the comments in a list -->
                     <div id="commentList"></div>
                 </div>
             </div>
