@@ -16,17 +16,87 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
         />
-        <title>Document</title>
+        <!-- JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
+        <title>Striver Home</title>
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img
+                        src="/striver-frontend/assets/icon.png"
+                        width="30"
+                        height="30"
+                        class="d-inline-block align-top rounded"
+                        style="margin-right: 10px"
+                        alt=""
+                    />
+                    Striver
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Quotes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="/striver-frontend/forum.html"
+                                >Forum</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="container mt-3">
             <div class="row">
                 <!-- creates first column in layout -->
                 <div class="col-sm">
                     <!-- site header -->
                     <h1>Striver</h1>
-                    <p>Safin, Leo, Alex, Navan | Mortensen Period 4</p>
-                    <button type="button" class="btn btn-primary" onclick="getQuote()">
+                    <p class="text-muted">
+                        Created by Safin, Leo, Alex, and Navan | Mortensen
+                        Period 4
+                    </p>
+                    <p>
+                        Welcome to Striver! If you're not sure where to start,
+                        go ahead and click that <b>Get new quote</b> button
+                        below. It'll display a brand new random inspirational
+                        quote for you to like/dislike or add comments on! You
+                        can also go to our
+                        <a href="/striver-frontend/forum.html">Forum</a> to
+                        freely post and discuss your goals. You can even react
+                        to your friends' goals with cool emoji reactions! All of
+                        your comments, likes, goals, and reactions are persisted
+                        to our backend, so you'll never have to worry about
+                        losing track of them.
+                    </p>
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="getQuote()"
+                    >
                         Get new quote
                     </button>
 
@@ -35,19 +105,30 @@
                         <blockquote class="blockquote">
                             <p id="quote"></p>
                         </blockquote>
-                        <figcaption class="blockquote-footer" id="quoteAuthor"></figcaption>
+                        <figcaption
+                            class="blockquote-footer"
+                            id="quoteAuthor"
+                        ></figcaption>
                     </figure>
 
                     <!-- bootstrap button for liking quote -->
                     <!-- btn-success = green -->
                     <!-- on click, run the increment likes function -->
-                    <button type="button" class="btn btn-success" onclick="incrementLikes()">
+                    <button
+                        type="button"
+                        class="btn btn-success"
+                        onclick="incrementLikes()"
+                    >
                         <span id="likeCount">N/A</span>
                         <!-- thumbs up icon -->
                         <i class="bi bi-hand-thumbs-up-fill"></i>
                     </button>
 
-                    <button type="button" class="btn btn-danger" onclick="incrementDislikes()">
+                    <button
+                        type="button"
+                        class="btn btn-danger"
+                        onclick="incrementDislikes()"
+                    >
                         <span id="dislikeCount">N/A</span>
                         <i class="bi bi-hand-thumbs-down-fill"></i>
                     </button>
@@ -75,7 +156,12 @@
                     </div>
                     <div class="mb-3">
                         <!-- submit button runs submit comment function -->
-                        <button onclick="submitComment()" class="btn btn-primary">Submit</button>
+                        <button
+                            onclick="submitComment()"
+                            class="btn btn-primary"
+                        >
+                            Submit
+                        </button>
                     </div>
                     <h2 id="commentsh2">Comments</h2>
                     <!-- displays all the comments in a list -->

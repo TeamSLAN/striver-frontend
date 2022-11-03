@@ -30,7 +30,7 @@ const createPostDOM = (uuid, { goal, name, smileys, thumbs, heart }) => {
         `;
     });
 
-    div.className = "border rounded p-3";
+    div.className = "border rounded p-3 mb-4";
     div.append(header);
     div.append(goalText);
     div.append(smileyButton);
@@ -77,7 +77,8 @@ const sendReaction = async (e, reaction) => {
         }),
     }).then((r) => r.json());
 
-    document.getElementById(`rxn-${postId}-${reaction}`).innerHTML = res[reaction];
+    document.getElementById(`rxn-${postId}-${reaction}`).innerHTML =
+        res[reaction];
 };
 
 const getPosts = async () => {
